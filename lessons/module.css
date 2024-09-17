@@ -1,0 +1,22 @@
+h1 {
+    margin-left: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size:300%;
+}
+
+h1, h3 {
+    color: #fda8d2;
+}
+
+h3, p {
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 75%;
+}
+
+hr {
+    margin: 40px;
+    border: 0;
+    border-top: 2px solid #fda8d2;
+  }

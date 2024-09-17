@@ -1,0 +1,36 @@
+h1 {
+    margin-left: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size:300%;
+}
+
+h1, h4, h3 {
+    color: #fda8d2;
+}
+
+h3, p {
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 75%;
+}
+
+h4 {
+    margin-left: 40px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-style: italic;
+}
+
+hr {
+    margin: 40px;
+    border: 0;
+    border-top: 2px solid #fda8d2;
+}
+
+#repl {
+    color: #ef9cc5 !important;
+    text-decoration: underline;
+    margin-left: 50px;
+    font-size: 18px;
+}

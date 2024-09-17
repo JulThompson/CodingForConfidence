@@ -1,0 +1,8 @@
+#logo {
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    margin: auto auto;
+    height: 200%;
+    width: 200%;
+}

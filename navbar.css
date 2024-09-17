@@ -1,0 +1,87 @@
+:root {
+    --header-back-color: #fda8d2;
+    --header-hover-back-color: #ef9cc5;
+    --header-border-color: #fda8d2;
+    --header-fore-color: #feeef6;
+}
+
+header {
+    height: 56px;
+}
+
+.button {
+    /* font-family: "Shantell Sans", cursive; */
+    /* font: "Syncopate"; */
+    font-size: 20px;
+}
+
+.right_align {
+    height: 50px !important;
+    font-size: 20px !important;
+    position: absolute;
+    right: 0;
+    padding-right: 15px;
+}
+
+
+/* Dropdown menus */
+.lesson-dropdown, .session-dropdown, .blog-dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+.lesson-dropdown .dropbtn, .session-dropdown .dropbtn, .blog-dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+.lesson-content, .session-content, .blog-content {
+    display: none;
+    position: absolute;
+    background-color: #ef9cc5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.lesson-content a, .session-content a, .blog-content a {
+    font-size: 16px !important;
+    /* font-family: "Shantell Sans", cursive; */
+    float: none;
+    color: #feeef6;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.lesson-content a:hover, .session-content a:hover, .blog-content a:hover {
+    background-color: #e18cb7;
+}
+
+
+.lesson-dropdown:hover .lesson-content, .session-dropdown:hover .session-content, .blog-dropdown:hover .blog-content {
+    display: block;
+}
+
+#icon {
+    justify-content: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+.whole-bar {
+    display: grid;
+    grid-template-columns: 100px 1000px;
+}
