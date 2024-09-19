@@ -1,24 +1,26 @@
-h1 {
-    margin-left: 25px;
-    margin-bottom: 25px;
-    font-weight: bold;
-    font-size:300%;
+body {
+    background-color: #feeef6;
 }
 
-h1, h4, h3 {
+h1 {
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size:300%;
     color: #fda8d2;
 }
 
-h3, p {
+h3, p, h4, #repl {
     margin-top: 20px;
     margin-left: 50px;
     width: 75%;
 }
 
 h4 {
-    margin-left: 40px;
+    /* margin-left: 40px;
     margin-bottom: 10px;
-    margin-top: 0px;
+    margin-top: 0px; */
     font-style: italic;
 }
 
@@ -29,8 +31,21 @@ hr {
 }
 
 #repl {
-    color: #ef9cc5 !important;
     text-decoration: underline;
-    margin-left: 50px;
-    font-size: 18px;
+    font-size: calc(1rem* var(--heading-ratio));
+    color: black !important;
+    display: block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+}
+
+#left, #right {
+    width: 90%;
+    height: 200px;
+    margin-top: 20px;
+    background-color:#fda8d2;
 }
