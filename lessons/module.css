@@ -1,11 +1,19 @@
-h1 {
+h1, h2 {
+    margin-top: 20px;
     margin-left: 25px;
-    margin-bottom: 25px;
-    font-weight: bold;
-    font-size:300%;
 }
 
-h1, h3 {
+h1 {
+    font-size: 300%;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+h1, h2, h3 {
     color: #fda8d2;
 }
 
