@@ -1,0 +1,67 @@
+body { /*WHATEVER CODE YOU PUT INSIDE OF THE BODY SECTION WILL AFFECT THE WHOLE PAGE */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f1e9ff; /*CHANGE THE BACKGROUND COLOR HERE */
+    margin: 0;
+    padding: 0;
+}
+
+header { /*WHATEVER CODE YOU PUT INSIDE OF THIS WILL AFFECT THE HEADER SECTION*/
+    background-color: #fda8d2; /*CHANGE THE BACKGROUND COLOR OF THE CLUB DESCRIPTION HERE */
+    color: white; /*CHANGE THE TEXT COLOR HERE */
+    text-align: center;
+    padding: 30px;
+    border-bottom: 5px solid #fda8d2; /*CHANGE THE COLOR OF THE LINES UNDER THE HEADER HERE */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em; /*THIS IS HOW YOU SET FONT SIZE. YOU CAN PUT THIS KIND OF LINE ANYWHERE YOU WANT THE TEXT TO BE BIGGER OR SMALLER */
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #fda8d2; /*CHANGE THE TEXT COLOR OF HEADINGS HERE */
+    border-bottom: 2px dashed #fda8d2; /*CHANGE THE COLOR OF THE LINES UNDER THE HEADINGS HERE */
+    padding-bottom: 10px;
+}
+
+.quotes {
+    margin-bottom: 20px;
+}
+
+.quote-card { /*ANYTHING IN HERE WILL AFFECT THE APPERANCE OF EACH QUOTE SECTION */
+    background: linear-gradient(145deg, #ffffff, #fdf5ff); /*CHANGE THE BACKGROUND COLOR OF EACH BOX HERE WITH THE SECOND COLOR */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 8px 8px 16px #e1c6d1, -8px -8px 16px #ffffff; /*CHANGE THE BACKGROUND COLOR OF THE SHADOW ON EACH BOX WITH THE FIRST COLOR */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.quote-card:hover { /*CHANGE THE WAY THE QUOTE BOX LOOKS WHEN HOVERED OVER */
+    transform: scale(1.05);
+    box-shadow: 12px 12px 24px #e1c6d1, -12px -12px 24px #ffffff;
+}
+
+.importance { /*ANYTHING IN HERE WILL AFFECT THE APPERANCE OF THE IMPORTANCE OF CONFIDENCE AND COLLABORATION SECTION */
+    background-color: #fff5f8; /*CHANGE THE BACKGROUND COLOR OF THE IMPORTANCE BOX*/
+    border: 2px solid #fda8d2; /*CHANGE THE BORDER COLOR AROUND THE IMPORTANCE BOX */
+    border-radius: 10px; /*CHANGE THE BACKGROUND THICKNESS AROUND THE IMPORTANCE BOX */
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /*CHANGE THE BACKGROUND COLOR OF THE SHADOW ON THE IMPORTANCE BOX */
+}
+
+footer { 
+    text-align: center;
+    padding: 15px;
+    background-color: #fda8d2; /*CHANGE THE BACKGROUND COLOR OF THE CREDITS HERE */
+    color: white; /*CHANGE THE TEXT COLOR OF THE CREDITS HERE */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
