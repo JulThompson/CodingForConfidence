@@ -49,3 +49,10 @@ hr {
     margin-top: 20px;
     background-color:#fda8d2;
 }
+
+#left5, #right5 {
+    width: 90%;
+    height: 300px;
+    margin-top: 20px;
+    background-color:#fda8d2;
+}

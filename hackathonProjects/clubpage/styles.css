@@ -1,0 +1,51 @@
+ body { /*WHATEVER CODE YOU PUT INSIDE OF THE BODY SECTION WILL AFFECT THE WHOLE PAGE */
+    font-family: Arial, sans-serif;
+    background-color: #feeef6; /*CHANGE THE BACKGROUND COLOR HERE */
+    margin: 0;
+    padding: 0;
+}
+
+header { /*WHATEVER CODE YOU PUT INSIDE OF THE HEADER SECTION WILL AFFECT THE CLUB DESCRIPTION*/
+    background-color: #fda8d2; /*CHANGE THE BACKGROUND COLOR OF THE CLUB DESCRIPTION HERE */
+    color: white; /*CHANGE THE TEXT COLOR HERE */
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px; /*THIS IS HOW YOU SET FONT SIZE. YOU CAN PUT THIS KIND OF LINE ANYWHERE YOU WANT THE TEXT TO BE BIGGER OR SMALLER */
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #fda8d2; /*CHANGE THE TEXT COLOR OF HEADINGS HERE */
+}
+
+.mission, .members { /*ANYTHING IN HERE WILL AFFECT WHAT IS INSIDE OF EACH SECTION */
+    background-color: white;
+    border: 1px solid #ccc; /*CHANGE THE COLOR OF THE BORDER AROUND THE SECTIONS HERE */
+    border-radius: 8px; /*CHANGE HOW ROUNDED THE BORDERS ARE HERE */
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.member-profile { /*ANYTHING IN HERE WILL AFFECT THE DESCRIPTIONS OF YOU */
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #fda8d2; /*CHANGE THE COLOR OF THE BORDER AROUND THE MEMBER BOXES HERE*/
+    border-radius: 5px; /*CHANGE HOW ROUNDED THE BORDERS ARE HERE */
+}
+
+footer {
+    text-align: center; /*CHANGE THE ALIGNMENT OF THE TEXT HERE */
+    padding: 10px;
+    background-color: #fda8d2; /*CHANGE THE BACKGROUND COLOR OF THE CREDITS HERE */
+    color: white; /*CHANGE THE TEXT COLOR OF THE CREDITS HERE */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
