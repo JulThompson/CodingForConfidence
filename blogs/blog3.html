@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog 6</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="whole-bar">
+            <img id="icon" src="../icon.png" onclick="location.href='../index.html'">
+            <div class="right_align">
+                <a href="../mission.html" class="button">Mission</a>
+                <div class="session-dropdown">
+                    <button class="button" id="dropbtn">Sessions</button>
+                    <div class="session-content">
+                        <a href="../sessions/session1.html">Session 1</a>
+                        <a href="../sessions/session2.html">Session 2</a>
+                        <a href="../sessions/session3.html">Session 3</a>
+                        <a href="../sessions/session4.html">Session 4</a>
+                        <a href="../sessions/session5.html">Session 5 - Hack!</a>
+                    </div>
+                </div>
+
+                <div class="lesson-dropdown">
+                    <button class="button" id="dropbtn">Lessons</button>
+                    <div class="lesson-content">
+                        <a href="../lessons/module1.html">Module 1</a>
+                        <a href="../lessons/module2.html">Module 2</a>
+                        <a href="../lessons/module3.html">Module 3</a>
+                        <a href="../lessons/module4.html">Module 4</a>
+                        <a href="../lessons/module5.html">Module 5 - Hack!</a>
+                    </div>
+                </div>
+
+                <div class="blog-dropdown">
+                    <button class="button" id="dropbtn">Blog</button>
+                    <div class="blog-content">
+                        <a href="blog1.html">Blog 1</a>
+                        <a href="blog2.html">Blog 2</a>
+                        <a href="blog3.html">Blog 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <h1>Girl-Powered Blog</h1>
+    <h2>Blog 3: Girls Just Wanna Have Fun</h2>
+    <div class="carousel-container">
+        <div class="carousel-images">
+            <img src="../pictures/hackmentoring2.jpeg" alt="Image 1">
+            <img src="../pictures/hackproj2.jpeg" alt="Image 2">
+            <img src="../pictures/hacklittlementoring.jpeg" alt="Image 3">
+            <img src="../pictures/hacklittlementoring2.jpeg" alt="Image 4">
+            <img src="../pictures/hackteambca.jpeg" alt="Image 5">
+            <img src="../pictures/hackawards.jpeg" alt="Image 6">
+            <img src="../pictures/hackawards2.jpeg" alt="Image 7">
+            <img src="../pictures/hackawards3.jpeg" alt="Image 8">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <hr>
+
+    <p>The girls wrapped up their Hackathon projects today. They started the session by adding the finishing touches
+         to their projects. It was really fun getting to walk around the room and look at all of the great websites
+         they were able to make in a short period of time! I was super proud of all the hard work the girls put in and
+         could tell the girls were proud of the work too. Then, the girls were each given a certificate recognizing them
+         for a skill they had shown throughout the Coding for Confidence experience. The girls were very supportive of one
+         another and cheered for every single award. I really enjoyed seeing the supportive community that had been fostered
+         throughout the project. Then, the girls got to have some fun, eating snacks and celebrating the experience. This was
+         an amazing close to the sessions and I could tell the girls were just as disappointed as I was that it was ending.
+    </p>
+    <style>
+        .carousel-container {
+            height: 20%;
+        }
+    </style>
+    <script>
+        let currentIndex = 0;
+
+        function moveSlide(direction) {
+            const images = document.querySelectorAll('.carousel-images img');
+            const totalImages = images.length;
+
+            // Update the current index based on direction
+            currentIndex += direction;
+
+            // Correct the index to loop properly when at the start or end
+            if (currentIndex < 0) {
+                currentIndex = totalImages - 2; // When moving backward from the first set, show the last set
+            }
+            if (currentIndex >= totalImages - 1) {
+                currentIndex = 0; // When moving forward past the last set, show the first set
+            }
+
+            // Move the carousel by adjusting the translateX value
+            document.querySelector('.carousel-images').style.transform = `translateX(${-currentIndex * 50}%)`;
+        }
+    </script>
+</body>
+
+</html>
