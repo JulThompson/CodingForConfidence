@@ -15,7 +15,7 @@ body {
 .principles {
     padding-left: 20px;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding-bottom: 20px;
     margin-left: 75px;
     margin-right: 75px;
@@ -36,12 +36,23 @@ h4 {
 
 .aboutme {
     margin-left: 75px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 20% 80%;
     display: grid;
 }
 
 #desc {
     margin-left: 10px;
+    margin-top: 10px;
+}
+
+.team {
+    padding-top: 10px;
+    margin-left: 75px;
+    grid-template-rows: auto auto auto;
+    display: grid;
+    width: 65%;
+    height: 65%;
+    margin-left: 0px;
 }
 
 /* #repl {

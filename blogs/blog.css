@@ -1,4 +1,5 @@
-h1, h2 {
+h1,
+h2 {
     margin-top: 20px;
     margin-left: 25px;
 }
@@ -13,11 +14,14 @@ h2 {
     font-style: italic;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: #fda8d2;
 }
 
-h3, p {
+h3,
+p {
     margin-top: 20px;
     margin-left: 50px;
     width: 75%;
@@ -27,4 +31,50 @@ hr {
     margin: 40px;
     border: 0;
     border-top: 2px solid #fda8d2;
-  }
+}
+
+p {
+    margin-bottom:50px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Style for images inside carousel */
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    width: 50%;
+    /* Adjusted to show two images */
+    max-height: 65vh;
+}
+
+/* Style for previous and next buttons */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
